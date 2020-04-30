@@ -1,0 +1,23 @@
+mpd_music_dir = ~/Music
+lyrics_directory  = /home/jesprr/.cache/lyrics
+ncmpcpp_directory  = /home/jesprr/.config/ncmpcpp
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+current_item_prefix = "$(16_green)"
+song_library_format = $/b{{%a - %t} (%b)}|{%f}
+song_status_format = $/b{%t}{%l}
+song_list_format = "{%a - %t}|{%t}$R{%l }$(end)"
+visualizer_color = green
+playlist_display_mode = classic
+progressbar_look = "---"
+header_visibility = no
+statusbar_visibility = no
+titles_visibility = no
+colors_enabled = yes
+main_window_color = 16
+volume_change_step = 5
+message_delay_time = 1
+execute_on_song_change = notify-send "Now Playing ♫" "\n\n$(mpc current -f '%artist% - %title% // %time%')"
