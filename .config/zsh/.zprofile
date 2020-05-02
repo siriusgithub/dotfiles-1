@@ -17,6 +17,7 @@ export WM="bspwm"
 export LAYOUT="us,ru"
 export PATH=$PATH:$HOME/.local/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/.npm/node_modules
 export TERMINAL="alacritty"
+export FMANAGER="ranger"
 export EDITOR="vim"
 export LAUNCHER="rofi"
 export MPLAYER="ncmpcpp"
